@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center">Wellcome to <span class="font-semibold text-purple-600">Baap er Bank</span>
+        </h1>
+    </header>
+    <main>
+        <section class="bg-green-100 w-3/4  p-8 mx-auto mt-8">
+            <h3 class="text-2xl mb-4">Please Login</h3>
+            <div>
+                <input class="border border-gray-400 rounded block  w-3/4 mb-4 px-2" type="text" id="user-email"
+                    placeholder="your email">
+                <input type="password" name="" id="user-password"
+                    class="border border-gray-400 rounded block  w-3/4 mb-4 px-2" placeholder="password">
+                <button id="login-submit" class="bg-yellow-600 px-4 rounded py-2 text-white font-medium">Submit</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('login-submit').addEventListener('click', function () {
+            const emailField = document.getElementById('user-email');
+            const userEmail = emailField.value;
+            //    password
+            const passwordField = document.getElementById('user-password');
+            const userpassword = passwordField.value;
+            if (userEmail == 'abcgmail.com' && userpassword == 'secret') {
+                window.location.href = 'banking.html'
+            }
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
